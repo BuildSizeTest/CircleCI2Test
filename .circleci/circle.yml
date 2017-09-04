@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:7.1.5-browsers
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - run: echo 'RUN'
+        
+      - store_artifacts:
+          path: hello.txt
+          destination: artifact-file
