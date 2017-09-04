@@ -13,4 +13,3 @@ jobs:
         
       - store_artifacts:
           path: hello.txt
-          destination: artifact-file
