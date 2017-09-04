@@ -12,4 +12,5 @@ jobs:
       - run: echo 'RUN'
         
       - store_artifacts:
-          path: hello.txt
+          path: artifacts/
+          destination: hello-world
